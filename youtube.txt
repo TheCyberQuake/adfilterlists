@@ -1,0 +1,4 @@
+/REGEX/ r[0-9]+---sn-bvvbax-a5nl.googlevideo.com
+/REGEX/ r[0-9]+.sn-bvvbax-a5nl.googlevideo.com
+||gstatic.com^
+@@||fonts.gstatic.com

@@ -1,11 +1,21 @@
-# gstatic, seem to help with youtube adblocking for some reason
+# Other URLs that seem to help
 ||gstatic.com^
 @@||fonts.gstatic.com
+||redirector.googlevideo.com^$important
+||ytstatic.l.google.com^$important
+||ocsp.pki.goog^$important
 
 # Current list of known "seeds" for youtube video ads.
 # You can't just block all googlevideo as this is also where it
 # pulls the actual video content from
-/r[0-9]+---sn-bvvbax-a5nl.googlevideo.com/ 
-/r[0-9]+.sn-bvvbax-a5nl.googlevideo.com/ 
+
+# wildcard block almost all seeds
 /r[0-9]+.sn-[a-zA-Z0-9]+-[a-zA-Z0-9]+.googlevideo.com/
 /r[0-9]+---sn-[a-zA-Z0-9]+-[a-zA-Z0-9]+.googlevideo.com/
+/r[0-9]+.sn-[a-zA-Z0-9]+.googlevideo.com/
+
+# wildcard specific seeds
+/r[0-9]+---sn-bvvbax-a5nl.googlevideo.com/
+/r[0-9]+.sn-bvvbax-a5nl.googlevideo.com/
+/r[0-9]+---sn-o097znlr.googlevideo.com/
+/r[0-9]+---sn-n4v7knlk.googlevideo.com/
